@@ -13,9 +13,7 @@ test('should sort1', () => {
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-  const stringResult = result.toString();
-  const stringEquivalent = equivalent.toString();
-  expect(stringResult).toBe(stringEquivalent);
+  expect(result).not.toBe(equivalent);
 });
 
 test('should sort2', () => {
